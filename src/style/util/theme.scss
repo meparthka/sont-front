@@ -1,0 +1,29 @@
+$light-theme: (
+  "text": $light-text,
+  "background": $light-background,
+  "alt-bg-alpha": $light-alt-background-alpha
+);
+
+$dark-theme: (
+  "text": $dark-text,
+  "background": $dark-background,
+  "alt-bg-alpha": $dark-alt-background-alpha
+);
+
+.light-theme{
+  @each $name, $color in $light-theme {
+    --color-#{$name}: #{$color};
+  }
+  @each $name, $color in $dark-theme {
+    --color-alt-#{$name}: #{$color};
+  }
+}
+
+.dark-theme{
+  @each $name, $color in $dark-theme {
+    --color-#{$name}: #{$color};
+  }
+  @each $name, $color in $light-theme {
+    --color-alt-#{$name}: #{$color};
+  }
+}

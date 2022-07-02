@@ -1,0 +1,83 @@
+$max-sm: 540px;
+$max-md: 720px;
+$max-lg: 960px;
+$max-xl: 1140px;
+$max-xxl: 1320px;
+
+$dark-background: rgb(26, 27, 30);
+$light-background: #fff;
+$dark-alt-background-alpha: rgba(255, 255, 255, 0.075);
+$light-alt-background-alpha: rgb(26, 27, 30, 0.15);
+$dark-text: #fff;
+$light-text: rgb(26, 27, 30);
+
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #f08c00;
+$green: #2B8A3E;
+$teal: #099268;
+$cyan: #0dcaf0;
+
+$primary: $blue;
+$colors: (
+  "primary": $primary,
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan
+);
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$breakpoints: (
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl
+);
+
+$grid-columns: 12;
+
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 3.5,
+  7: $spacer * 4,
+  8: $spacer * 4.5
+);
+
+$transition-button-1: .4s;
+$transition-button-2: .1s;
+$button-font-size: 16px;
+$button-hover-darken: 8%;
+$button-active-darken: 8%;
+$button-border-darken: 20%;
+$button-radius: 4px;
+$button-hover-translate: translateY(0px);
+$button-active-translate: translateY(-3px);
+$button-com-hover-translate: translateY(0px);
+$button-com-active-translate: translateY(-2px);
+$button-padding: 8px 16px;
+$button-com-padding: 4px 8px;
+$button-margin: $spacer * .25;

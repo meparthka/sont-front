@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "PORT=3000 react-scripts start",
+    "scss": "sass --watch src/style/main.scss src/style/main.css",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
