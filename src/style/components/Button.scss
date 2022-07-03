@@ -101,10 +101,11 @@ $color in $colors {
 // Default Button
 .btn-def {
 
-  color: getColor("text");
+  color: getColor("text") !important;
+  background: #0000;
 
   &:hover {
-    background: getColor("alt-bg-alpha");
+    background: getColor("alt-bg-alpha") !important;
     transition: $transition-button-1  !important;
     transform: $button-hover-translate;
   }
