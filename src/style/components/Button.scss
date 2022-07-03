@@ -121,3 +121,26 @@ $color in $colors {
   }
 
 }
+
+// Default Button
+.btn-dark {
+  color: getColor("text") !important;
+  background: #0000;
+
+  &:hover {
+    background: getColor("background-dark") !important;
+    transition: $transition-button-1  !important;
+    transform: $button-hover-translate;
+  }
+
+  &:active {
+    transition: $transition-button-1  !important;
+    transform: $button-active-translate;
+  }
+
+  &:focus-visible {
+    transition: $transition-button-2;
+    outline: 3px solid rgba(map.get($colors, "primary"), 0.5);
+  }
+
+}

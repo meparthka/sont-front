@@ -1,0 +1,82 @@
+.notify {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 420px;
+  transition: .5s;
+
+  .notify-con {
+    margin: 15px;
+    padding: 5px 8px;
+    background-color: getColor("background-2");
+    display: flex;
+    border-radius: $button-radius;
+    transition: .5s;
+    animation: ease .5s notify-ani;
+    transform: translateX(0%);
+
+    .notify-bar {
+      margin-right: 8px;
+      border-radius: 4px;
+      width: 4px;
+      background: $primary;
+    }
+
+    .notify-text {
+      margin-right: auto;
+    }
+
+    .btn {
+      margin: auto 0;
+      height: 30px;
+      width: 30px;
+      padding: 3px 0 0 0;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    &.notify-remove {
+      animation: ease .5s notify-remove;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+  .notify {
+    width: 100%;
+  }
+}
+
+@keyframes notify-ani {
+  from {
+    height: 0;
+    transform: translateX(110%);
+  }
+
+  70% {
+    transform: translateX(-10%);
+  }
+
+  to {
+    height: 100%;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes notify-remove {
+  from {
+    height: 0;
+    transform: translateX(0%);
+  }
+
+  30% {
+    transform: translateX(-10%);
+  }
+
+  to {
+    height: 100%;
+    transform: translateX(100%);
+  }
+}
