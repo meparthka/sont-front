@@ -1,0 +1,20 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+
+  .nav-logo{
+    color: getColor("text-color");
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+
+  .nav-link{
+    margin: auto 0;
+  }
+}
+
+.light-theme .navbar{
+  .nav-logo{
+    color: $primary;
+  }
+}

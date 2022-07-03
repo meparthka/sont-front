@@ -5,9 +5,32 @@
   box-sizing: border-box;
 }
 
+body{
+  background: getColor("background");
+  color: getColor("text");
+}
+
 .main-app {
   display: inline-block;
-  min-height: 100vh;
   min-width: 100%;
-  background: getColor("background");
+}
+
+.link{
+  color: getColor("text");
+  text-decoration: none;
+  &:hover{
+    color: $primary;
+  }
+}
+
+.d-flex{
+  display: flex;
+}
+
+.d-none{
+  display: none;
+}
+
+.form > .btn{
+  margin: 0;
 }

@@ -97,3 +97,26 @@ $color in $colors {
     transform: $button-com-active-translate  !important;
   }
 }
+
+// Default Button
+.btn-def {
+
+  color: getColor("text");
+
+  &:hover {
+    background: getColor("alt-bg-alpha");
+    transition: $transition-button-1  !important;
+    transform: $button-hover-translate;
+  }
+
+  &:active {
+    transition: $transition-button-1  !important;
+    transform: $button-active-translate;
+  }
+
+  &:focus-visible {
+    transition: $transition-button-2;
+    outline: 3px solid rgba(map.get($colors, "primary"), 0.5);
+  }
+
+}

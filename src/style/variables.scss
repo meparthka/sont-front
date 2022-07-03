@@ -7,10 +7,12 @@ $max-xxl: 1320px;
 $dark-background: rgb(26, 27, 30);
 $light-background: #fff;
 $dark-alt-background-alpha: rgba(255, 255, 255, 0.075);
-$light-alt-background-alpha: rgb(26, 27, 30, 0.15);
+$light-alt-background-alpha: rgba(26, 27, 30, 0.1);
 $dark-text: #fff;
 $light-text: rgb(26, 27, 30);
 
+$black: #000;
+$white: #fff;
 $blue: #0d6efd;
 $indigo: #6610f2;
 $purple: #6f42c1;
@@ -64,7 +66,8 @@ $spacers: (
   5: $spacer * 3,
   6: $spacer * 3.5,
   7: $spacer * 4,
-  8: $spacer * 4.5
+  8: $spacer * 4.5,
+  l: $spacer * 8
 );
 
 $transition-button-1: .4s;

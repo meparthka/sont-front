@@ -1,11 +1,11 @@
 // Input Group
-.input-group{
-  input{
+.input-box {
+  input {
+    width: 100%;
     font-size: $button-font-size;
     color: getColor("text");
     background: getColor("alt-bg-alpha");
     padding: $button-padding;
-    margin: $button-margin;
     display: inline-block;
     text-decoration: none;
     border: 1px solid #0000;
@@ -13,10 +13,49 @@
     cursor: pointer;
     transition: $transition-button-1;
     border-radius: $button-radius;
-    
-    &:focus{
-      border: 1px solid $primary !important;
-    }
 
+    &:focus {
+      border: 1px solid $primary  !important;
+    }
+  }
+}
+
+.input-box-alt {
+  position: relative;
+
+  .text {
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 36px;
+    color: rgb(144, 146, 150);
+  }
+
+  input {
+    width: 100%;
+    font-size: $button-font-size;
+    color: getColor("text");
+    background: getColor("alt-bg-alpha");
+    padding: $button-padding;
+    padding-left: 32px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #0000;
+    outline: none;
+    cursor: pointer;
+    transition: $transition-button-1;
+    border-radius: $button-radius;
+
+    &:focus {
+      border: 1px solid $primary  !important;
+    }
   }
 }
