@@ -3,7 +3,6 @@ import { BiX } from "react-icons/bi"
 
 const NotificationProvider = ({ children }) => {
 
-
   let [notify, setNotify] = useState([]);
 
   const removeNotify = (e) => {
