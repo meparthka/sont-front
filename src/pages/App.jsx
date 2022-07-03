@@ -3,19 +3,23 @@ import { Route, Routes } from "react-router-dom"
 import Login from "./login"
 import Home from "./home"
 import NotFound from "./notfound"
-import NotificationProvider from "../util/notification"
+import store from '../data/store'
+import { Provider } from 'react-redux'
+import { NotificationProvider } from "../util/notification"
 
 const adminApp = () => {
   return (
-    <NotificationProvider>
-      <div className="main-app">
-        <Routes>
-          <Route path="*" element={<NotFound />} />
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/login" element={<Login />} />
-        </Routes>
-      </div>
-    </NotificationProvider>
+    <Provider store={store}>
+      <NotificationProvider NotificationProvider >
+        <div className="main-app">
+          <Routes>
+            <Route path="*" element={<NotFound />} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/login" element={<Login />} />
+          </Routes>
+        </div>
+      </NotificationProvider >
+    </Provider>
   )
 }
 
