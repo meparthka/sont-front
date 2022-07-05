@@ -48,6 +48,27 @@ $color in $colors {
       outline: 3px solid rgba($color, .4);
     }
 
+
+    &[disabled] {
+      cursor: default;
+      opacity: .7;
+
+      &:hover {
+        transform: none;
+        background: $color;
+      }
+
+      &:active {
+        transform: none;
+        background: $color;
+      }
+
+      &:focus-visible {
+        transition: none;
+      }
+
+    }
+
   }
 }
 

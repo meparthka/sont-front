@@ -952,6 +952,21 @@ body {
 .btn-primary:focus-visible {
   outline: 3px solid rgba(13, 110, 253, 0.4);
 }
+.btn-primary[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-primary[disabled]:hover {
+  transform: none;
+  background: #0d6efd;
+}
+.btn-primary[disabled]:active {
+  transform: none;
+  background: #0d6efd;
+}
+.btn-primary[disabled]:focus-visible {
+  transition: none;
+}
 
 .btn-blue {
   background: #0d6efd;
@@ -964,6 +979,21 @@ body {
 }
 .btn-blue:focus-visible {
   outline: 3px solid rgba(13, 110, 253, 0.4);
+}
+.btn-blue[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-blue[disabled]:hover {
+  transform: none;
+  background: #0d6efd;
+}
+.btn-blue[disabled]:active {
+  transform: none;
+  background: #0d6efd;
+}
+.btn-blue[disabled]:focus-visible {
+  transition: none;
 }
 
 .btn-indigo {
@@ -978,6 +1008,21 @@ body {
 .btn-indigo:focus-visible {
   outline: 3px solid rgba(102, 16, 242, 0.4);
 }
+.btn-indigo[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-indigo[disabled]:hover {
+  transform: none;
+  background: #6610f2;
+}
+.btn-indigo[disabled]:active {
+  transform: none;
+  background: #6610f2;
+}
+.btn-indigo[disabled]:focus-visible {
+  transition: none;
+}
 
 .btn-purple {
   background: #6f42c1;
@@ -990,6 +1035,21 @@ body {
 }
 .btn-purple:focus-visible {
   outline: 3px solid rgba(111, 66, 193, 0.4);
+}
+.btn-purple[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-purple[disabled]:hover {
+  transform: none;
+  background: #6f42c1;
+}
+.btn-purple[disabled]:active {
+  transform: none;
+  background: #6f42c1;
+}
+.btn-purple[disabled]:focus-visible {
+  transition: none;
 }
 
 .btn-pink {
@@ -1004,6 +1064,21 @@ body {
 .btn-pink:focus-visible {
   outline: 3px solid rgba(214, 51, 132, 0.4);
 }
+.btn-pink[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-pink[disabled]:hover {
+  transform: none;
+  background: #d63384;
+}
+.btn-pink[disabled]:active {
+  transform: none;
+  background: #d63384;
+}
+.btn-pink[disabled]:focus-visible {
+  transition: none;
+}
 
 .btn-red {
   background: #dc3545;
@@ -1016,6 +1091,21 @@ body {
 }
 .btn-red:focus-visible {
   outline: 3px solid rgba(220, 53, 69, 0.4);
+}
+.btn-red[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-red[disabled]:hover {
+  transform: none;
+  background: #dc3545;
+}
+.btn-red[disabled]:active {
+  transform: none;
+  background: #dc3545;
+}
+.btn-red[disabled]:focus-visible {
+  transition: none;
 }
 
 .btn-orange {
@@ -1030,6 +1120,21 @@ body {
 .btn-orange:focus-visible {
   outline: 3px solid rgba(253, 126, 20, 0.4);
 }
+.btn-orange[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-orange[disabled]:hover {
+  transform: none;
+  background: #fd7e14;
+}
+.btn-orange[disabled]:active {
+  transform: none;
+  background: #fd7e14;
+}
+.btn-orange[disabled]:focus-visible {
+  transition: none;
+}
 
 .btn-yellow {
   background: #f08c00;
@@ -1042,6 +1147,21 @@ body {
 }
 .btn-yellow:focus-visible {
   outline: 3px solid rgba(240, 140, 0, 0.4);
+}
+.btn-yellow[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-yellow[disabled]:hover {
+  transform: none;
+  background: #f08c00;
+}
+.btn-yellow[disabled]:active {
+  transform: none;
+  background: #f08c00;
+}
+.btn-yellow[disabled]:focus-visible {
+  transition: none;
 }
 
 .btn-green {
@@ -1056,6 +1176,21 @@ body {
 .btn-green:focus-visible {
   outline: 3px solid rgba(43, 138, 62, 0.4);
 }
+.btn-green[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-green[disabled]:hover {
+  transform: none;
+  background: #2B8A3E;
+}
+.btn-green[disabled]:active {
+  transform: none;
+  background: #2B8A3E;
+}
+.btn-green[disabled]:focus-visible {
+  transition: none;
+}
 
 .btn-teal {
   background: #099268;
@@ -1069,6 +1204,21 @@ body {
 .btn-teal:focus-visible {
   outline: 3px solid rgba(9, 146, 104, 0.4);
 }
+.btn-teal[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-teal[disabled]:hover {
+  transform: none;
+  background: #099268;
+}
+.btn-teal[disabled]:active {
+  transform: none;
+  background: #099268;
+}
+.btn-teal[disabled]:focus-visible {
+  transition: none;
+}
 
 .btn-cyan {
   background: #0dcaf0;
@@ -1081,6 +1231,21 @@ body {
 }
 .btn-cyan:focus-visible {
   outline: 3px solid rgba(13, 202, 240, 0.4);
+}
+.btn-cyan[disabled] {
+  cursor: default;
+  opacity: 0.7;
+}
+.btn-cyan[disabled]:hover {
+  transform: none;
+  background: #0dcaf0;
+}
+.btn-cyan[disabled]:active {
+  transform: none;
+  background: #0dcaf0;
+}
+.btn-cyan[disabled]:focus-visible {
+  transition: none;
 }
 
 .btn-alt {
