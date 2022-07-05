@@ -1,5 +1,10 @@
 // Input Group
 .input-box {
+  
+  .input-input-box{
+    position: relative;
+  }
+
   input {
     width: 100%;
     font-size: $button-font-size;
@@ -18,10 +23,31 @@
       border: 1px solid $primary  !important;
     }
   }
+
+  &.input-error {
+    input {
+      border: 1px solid $red;
+      &:focus{
+        border: 1px solid $red !important;
+      }
+    }
+  }
+
+  .input-error{
+    display: block;
+    margin: 5px 0;
+    color: $red;
+    font-size: .9rem;
+  }
+
 }
 
 .input-box-alt {
   position: relative;
+
+  .input-input-box{
+    position: relative;
+  }
 
   .text {
     pointer-events: none;
@@ -56,6 +82,26 @@
 
     &:focus {
       border: 1px solid $primary  !important;
+    }  
+  }
+
+  &.input-error {
+    .text{
+      color: $red;
+    }
+    input {
+      border: 1px solid $red;
+      &:focus{
+        border: 1px solid $red !important;
+      }
     }
   }
+
+  .input-error{
+    display: block;
+    margin: 5px 0;
+    color: $red;
+    font-size: .9rem;
+  }
+
 }

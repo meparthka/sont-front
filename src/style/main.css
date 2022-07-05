@@ -1157,6 +1157,9 @@ body {
   outline: 3px solid rgba(13, 110, 253, 0.5);
 }
 
+.input-box .input-input-box {
+  position: relative;
+}
 .input-box input {
   width: 100%;
   font-size: 16px;
@@ -1174,8 +1177,23 @@ body {
 .input-box input:focus {
   border: 1px solid #0d6efd !important;
 }
+.input-box.input-error input {
+  border: 1px solid #dc3545;
+}
+.input-box.input-error input:focus {
+  border: 1px solid #dc3545 !important;
+}
+.input-box .input-error {
+  display: block;
+  margin: 5px 0;
+  color: #dc3545;
+  font-size: 0.9rem;
+}
 
 .input-box-alt {
+  position: relative;
+}
+.input-box-alt .input-input-box {
   position: relative;
 }
 .input-box-alt .text {
@@ -1210,6 +1228,21 @@ body {
 }
 .input-box-alt input:focus {
   border: 1px solid #0d6efd !important;
+}
+.input-box-alt.input-error .text {
+  color: #dc3545;
+}
+.input-box-alt.input-error input {
+  border: 1px solid #dc3545;
+}
+.input-box-alt.input-error input:focus {
+  border: 1px solid #dc3545 !important;
+}
+.input-box-alt .input-error {
+  display: block;
+  margin: 5px 0;
+  color: #dc3545;
+  font-size: 0.9rem;
 }
 
 .navbar {
