@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Navbar from "../components/navbar"
 import InputBox from "../components/inputbox"
 import CheckBox from "../components/checkbox"
@@ -18,6 +18,13 @@ const Login = () => {
     dispatch(addNotify({}))
   }
 
+  let [loginValue, setLoginValues] = useState({})
+
+  const viewValue = (e) => {
+    e.preventDefault()
+    console.log(loginValue);
+  }
+
   return (
     <div>
       <Navbar login={true} />
@@ -33,11 +40,11 @@ const Login = () => {
               </div>
             </div>
             <div className="inputs">
-              <InputBox icon={<BiUser />} place="Username" />
-              <InputBox icon={<BiLockAlt />} place="Password" type="password" />
-              <CheckBox lable="Remember Me." />
+              <InputBox icon={<BiUser />} name="username" values={loginValue} setValues={setLoginValues} place="Username" />
+              <InputBox icon={<BiLockAlt />} name="password" values={loginValue} setValues={setLoginValues}  place="Password" type="password" />
+              <CheckBox lable="Remember Me." name="me" values={loginValue} setValues={setLoginValues}  />
             </div>
-            <button className="btn btn-primary a-right">Login</button>
+            <button onClick={viewValue} className="btn btn-primary a-right">Login</button>
           </form>
           <button onClick={addNoti}>TimeOut Notify</button>
           <button onClick={addNoti2}>Notify</button>
