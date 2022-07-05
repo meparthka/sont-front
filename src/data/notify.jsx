@@ -58,11 +58,22 @@ export const notifySlice = createSlice({
         </div>
       )
       state.count++;
+    },
 
-    }
   }
 })
 
-export const { addNotify } = notifySlice.actions
+const removeAllNotify = (state) => {
+  let notifys = document.getElementsByClassName("notify")[0].childNodes
+  notifys.forEach(element => {
+    let n = element;
+    n.className += " notify-remove"
+    setTimeout(() => {
+      n.remove()
+    }, 450)
+  });
+}
 
+export const { addNotify } = notifySlice.actions
+export { removeAllNotify };
 export default notifySlice.reducer

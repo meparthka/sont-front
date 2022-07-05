@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from "../components/navbar"
 import { useDispatch } from 'react-redux'
-import { addNotify } from "../data/notify"
+import { addNotify, removeAllNotify } from "../data/notify"
 
 const Home = () => {
 
@@ -12,7 +12,7 @@ const Home = () => {
   }
 
   const addNoti2 = () => {
-    dispatch(addNotify())
+    dispatch(addNotify({}))
   }
 
   return (
@@ -22,6 +22,9 @@ const Home = () => {
         <h1>Home</h1>
         <button onClick={addNoti}>TimeOut Notify</button>
         <button onClick={addNoti2}>Notify</button>
+        <button onClick={() => {
+          removeAllNotify()
+        }}>Remove</button>
       </div>
     </div>
   )
