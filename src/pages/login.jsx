@@ -9,13 +9,13 @@ import { addNotify } from "../data/notify"
 const Login = () => {
 
   const dispatch = useDispatch();
-  
+
   const addNoti = () => {
-    dispatch(addNotify(3000))
+    dispatch(addNotify({ timeOut: 3000 }))
   }
 
   const addNoti2 = () => {
-    dispatch(addNotify())
+    dispatch(addNotify({}))
   }
 
   return (

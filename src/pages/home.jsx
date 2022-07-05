@@ -8,7 +8,7 @@ const Home = () => {
   const dispatch = useDispatch();
 
   const addNoti = () => {
-    dispatch(addNotify(10000))
+    dispatch(addNotify({ timeOut: 10000 }))
   }
 
   const addNoti2 = () => {

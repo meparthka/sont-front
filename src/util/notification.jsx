@@ -1,7 +1,5 @@
-import React, { useState } from "react"
-import { useSelector, useDispatch } from 'react-redux'
-import { addNotify } from '../data/notify'
-
+import React from "react"
+import { useSelector } from 'react-redux'
 const NotificationProvider = ({ children }) => {
 
   const notify = useSelector(state => state.notify.value)

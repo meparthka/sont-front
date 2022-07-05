@@ -4,7 +4,7 @@ import { BiX } from "react-icons/bi"
 
 const removeNotify = (e) => {
   let n = e.target.parentElement;
-  while (n.className != "notify-con") {
+  while (n.className !== "notify-con") {
     n = n.parentElement;
   };
   n.className += " notify-remove"
@@ -18,7 +18,7 @@ const removeNotifyTimeOut = (t, id) => {
   setTimeout(() => {
     notifys.forEach(element => {
       let n = element;
-      if (n.getAttribute("notifyid") == id) {
+      if (n.getAttribute("notifyid") === String(id)) {
         n.className += " notify-remove"
         setTimeout(() => {
           n.remove()
@@ -35,10 +35,10 @@ export const notifySlice = createSlice({
     count: 0
   },
   reducers: {
-    addNotify: (state, timeout) => {
-      if (timeout) {
-        if (timeout.payload)
-          removeNotifyTimeOut(timeout.payload, state.count)
+    addNotify: (state, e) => {
+      if (e) {
+        if (e.payload.timeOut)
+          removeNotifyTimeOut(e.payload.timeOut, state.count)
       }
 
       state.value.push(
