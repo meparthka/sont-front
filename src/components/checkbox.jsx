@@ -1,21 +1,10 @@
 import React, { useState } from "react"
 
 const CheckBox = (q) => {
-
-  let [_inputValue, setInputValue] = useState("")
-
-  const setValue = (e) => {
-    setInputValue(e.target.checked);
-
-    if (q.setValues) {
-      q.setValues({ ...q.values || {}, [q.name]: e.target.checked })
-    }
-  }
-
   return (
-    <label class="check-box" name={q.name} onChange={setValue}>
+    <label class="check-box">
       <span>{q.lable}</span>
-      <input type="checkbox" />
+      <input type="checkbox" name={q.name} onChange={q.onChange} checked={q.checked} id={q.id} />
       <span class="checkmark"></span>
     </label>
   )

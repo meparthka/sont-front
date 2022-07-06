@@ -1,19 +1,8 @@
 import React, { useState } from "react"
 
 const InputBox = (q) => {
-
-  let [_inputValue, setInputValue] = useState("")
-
-  const setValue = (e) => {
-    setInputValue(e.target.value);
-
-    if (q.setValues) {
-      q.setValues({ ...q.values || {}, [q.name]: e.target.value })
-    }
-  }
-
   return (
-    <div className={"input-box" + (q.icon ? "-alt" : "") + (q.className ? (" " + q.className) : "") + (q.error[q.name] ? " input-error" : "")}>
+    <div className={"input-box" + (q.icon ? "-alt" : "") + (q.className ? (" " + q.className) : "") + (q.error ? " input-error" : "")}>
       <div className="input-input-box">
         {(() => {
           if (q.icon)
@@ -23,9 +12,9 @@ const InputBox = (q) => {
               </div>
             )
         })()}
-        <input type={q.type || "text"} name={q.name} onChange={setValue} className="m-0" placeholder={q.place} />
+        <input type={q.type || "text"} name={q.name} id={q.id} onChange={q.onChange} value={q.value} className="m-0" placeholder={q.place} />
       </div>
-      <span className="input-error">{q.error[q.name]}</span>
+      <span className="input-error">{q.error}</span>
     </div>
   )
 }

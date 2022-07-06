@@ -6,10 +6,6 @@ import { BiUser, BiLockAlt } from "react-icons/bi";
 import { useDispatch } from "react-redux";
 import { addNotify, removeAllNotify } from "../data/notify"
 
-/* 
-react note ma form field ni value get karavava valu function thi try kari ovu
-*/
-
 const Login = () => {
 
   /* Login Data */
@@ -21,6 +17,14 @@ const Login = () => {
   let [loginError, setLoginError] = useState({})
 
   let dispatch = useDispatch()
+
+  /* Set login form value */
+  const setLoginFormValue = (e) => {
+    setLoginValues({
+      ...loginValue,
+      [e.target.name]: e.target.type === "checkbox" ? e.target.checked : e.target.value
+    })
+  }
 
   /* Try Login */
   const tryLogin = (d) => {
@@ -39,6 +43,10 @@ const Login = () => {
         loginButton.removeAttribute("disabled") // login button enable
       } else {
         // if username or password not valid
+        setLoginValues({
+          ...loginValue,
+          password: ""
+        })
         dispatch(addNotify({})) // show invalid usename notification
         loginOver.add("d-none") // remove overlay
         loginButton.removeAttribute("disabled") // login button enable
@@ -72,10 +80,6 @@ const Login = () => {
         })
         loginButton.removeAttribute("disabled") // login button enable
       } else { // If Valid
-        setLoginValues({
-          username: usernameError,
-          password: passwordError
-        })
         loginButton.removeAttribute("disabled") // login button enable
         tryLogin(loginValue)
       }
@@ -98,9 +102,9 @@ const Login = () => {
               </div>
             </div>
             <div className="inputs">
-              <InputBox icon={<BiUser />} name="username" values={loginValue} setValues={setLoginValues} error={loginError} place="Username" />
-              <InputBox icon={<BiLockAlt />} name="password" values={loginValue} setValues={setLoginValues} error={loginError} place="Password" type="password" />
-              <CheckBox lable="Remember Me." name="remember" values={loginValue} setValues={setLoginValues} />
+              <InputBox icon={<BiUser />} name="username" value={loginValue.username} onChange={setLoginFormValue} error={loginError.username} place="Username" />
+              <InputBox icon={<BiLockAlt />} name="password" value={loginValue.password} onChange={setLoginFormValue} error={loginError.password} place="Password" type="password" />
+              <CheckBox lable="Remember Me." name="remember" value={loginValue.remember} onChange={setLoginFormValue} />
             </div>
             <button id="login_button" className="btn btn-primary a-right">Login</button>
           </form>
