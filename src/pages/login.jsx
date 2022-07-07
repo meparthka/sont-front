@@ -47,7 +47,12 @@ const Login = () => {
           ...loginValue,
           password: ""
         })
-        dispatch(addNotify({})) // show invalid usename notification
+        dispatch(addNotify({
+          timeOut: 5000,
+          color: "red",
+          title: "Invalid Login Details",
+          des: "Invalid Username Or Password"
+        })) // show invalid usename notification
         loginOver.add("d-none") // remove overlay
         loginButton.removeAttribute("disabled") // login button enable
       }
