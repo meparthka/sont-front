@@ -15,15 +15,33 @@
     animation: ease .5s notify-ani;
     transform: translateX(0%);
 
-    .notify-bar {
-      margin-right: 8px;
-      border-radius: 4px;
-      width: 4px;
-      background: $primary;
+    @each $name, $color in $colors {
+      .notify-bar-#{$name} {
+        margin-right: 8px;
+        border-radius: 4px;
+        width: 4px;
+        background: $color;
+      }
     }
-
+    
     .notify-text {
       margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .notify-title{
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+    
+    .notify-des{
+      margin-top: 2px;
+      margin-bottom: 5px;
+      font-weight: 300;
     }
 
     .btn {

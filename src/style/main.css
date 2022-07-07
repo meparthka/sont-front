@@ -1165,16 +1165,16 @@ body {
 }
 
 .btn-green {
-  background: #2B8A3E;
+  background: #1fb83d;
 }
 .btn-green:hover {
-  background: #216b30;
+  background: #199531;
 }
 .btn-green:active {
-  background: #216b30;
+  background: #199531;
 }
 .btn-green:focus-visible {
-  outline: 3px solid rgba(43, 138, 62, 0.4);
+  outline: 3px solid rgba(31, 184, 61, 0.4);
 }
 .btn-green[disabled] {
   cursor: default;
@@ -1182,11 +1182,11 @@ body {
 }
 .btn-green[disabled]:hover {
   transform: none;
-  background: #2B8A3E;
+  background: #1fb83d;
 }
 .btn-green[disabled]:active {
   transform: none;
-  background: #2B8A3E;
+  background: #1fb83d;
 }
 .btn-green[disabled]:focus-visible {
   transition: none;
@@ -1532,14 +1532,88 @@ body {
   animation: ease 0.5s notify-ani;
   transform: translateX(0%);
 }
-.notify .notify-con .notify-bar {
+.notify .notify-con .notify-bar-primary {
   margin-right: 8px;
   border-radius: 4px;
   width: 4px;
   background: #0d6efd;
 }
+.notify .notify-con .notify-bar-blue {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 4px;
+  background: #0d6efd;
+}
+.notify .notify-con .notify-bar-indigo {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 4px;
+  background: #6610f2;
+}
+.notify .notify-con .notify-bar-purple {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 4px;
+  background: #6f42c1;
+}
+.notify .notify-con .notify-bar-pink {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 4px;
+  background: #d63384;
+}
+.notify .notify-con .notify-bar-red {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 4px;
+  background: #dc3545;
+}
+.notify .notify-con .notify-bar-orange {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 4px;
+  background: #fd7e14;
+}
+.notify .notify-con .notify-bar-yellow {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 4px;
+  background: #f08c00;
+}
+.notify .notify-con .notify-bar-green {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 4px;
+  background: #1fb83d;
+}
+.notify .notify-con .notify-bar-teal {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 4px;
+  background: #099268;
+}
+.notify .notify-con .notify-bar-cyan {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 4px;
+  background: #0dcaf0;
+}
 .notify .notify-con .notify-text {
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.notify .notify-con .notify-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.notify .notify-con .notify-des {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-weight: 300;
 }
 .notify .notify-con .btn {
   margin: auto 0;

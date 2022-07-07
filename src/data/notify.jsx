@@ -43,14 +43,18 @@ export const notifySlice = createSlice({
 
       state.value.push(
         <div className="notify-con" notifyid={state.count} >
-          <div className="notify-bar">
+          <div className={"notify-bar-" + (e.payload.color || "primary")}>
 
           </div>
           <div className="notify-text">
-            <h1>Hello, Computer!</h1>
-            <h1>Helol</h1>
-            <h1>Helol</h1>
-            Hello, {state.count}!
+            {(() => {
+              if (e.payload.title)
+                return <snap className='notify-title'>{e.payload.title}</snap>
+            })()}
+            {(() => {
+              if (e.payload.des)
+                return <snap className='notify-des'>{e.payload.des}</snap>
+            })()}
           </div>
           <button className="btn btn-def btn-dark" onClick={removeNotify} >
             <BiX />
