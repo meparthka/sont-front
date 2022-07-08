@@ -3,15 +3,21 @@ $light-theme: (
   "background": $light-background,
   "alt-bg-alpha": $light-alt-background-alpha,
   "background-2": $light-background-2,
-  "background-dark": $light-background-dark
-);
-
-$dark-theme: (
-  "text": $dark-text,
-  "background": $dark-background,
-  "alt-bg-alpha": $dark-alt-background-alpha,
-  "background-2": $dark-background-2,
-  "background-dark": $dark-background-dark
+  "background-3": $light-background-3,
+  "background-dark": $light-background-dark,
+  "icon-color": $light-icon-color,
+  "icon-color-active": $light-icon-color-active
+  );
+  
+  $dark-theme: (
+    "text": $dark-text,
+    "background": $dark-background,
+    "alt-bg-alpha": $dark-alt-background-alpha,
+    "background-2": $dark-background-2,
+    "background-3": $dark-background-3,
+    "background-dark": $dark-background-dark,
+    "icon-color": $dark-icon-color,
+    "icon-color-active": $dark-icon-color-active
 );
 
 .light-theme{
