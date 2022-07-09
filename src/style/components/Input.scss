@@ -8,8 +8,8 @@
   input {
     width: 100%;
     font-size: $button-font-size;
-    color: getColor("text");
-    background: getColor("alt-bg-alpha");
+    color: $text;
+    background: $alt-background-alpha;
     padding: $button-padding;
     display: inline-block;
     text-decoration: none;
@@ -68,8 +68,8 @@
   input {
     width: 100%;
     font-size: $button-font-size;
-    color: getColor("text");
-    background: getColor("alt-bg-alpha");
+    color: $text;
+    background: $alt-background-alpha;
     padding: $button-padding;
     padding-left: 32px;
     display: inline-block;

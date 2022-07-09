@@ -75,8 +75,8 @@ $color in $colors {
 // Alt Button
 .btn-alt {
   font-size: $button-font-size;
-  color: getColor("alt-text");
-  background: getColor("alt-background");
+  color: $black;
+  background: $text;
   padding: $button-padding;
   margin: $button-margin;
   display: inline-block;
@@ -122,11 +122,11 @@ $color in $colors {
 // Default Button
 .btn-def {
 
-  color: getColor("text") !important;
+  color: $text !important;
   background: #0000;
 
   &:hover {
-    background: getColor("alt-bg-alpha") !important;
+    background: $alt-background-alpha !important;
     transition: $transition-button-1  !important;
     transform: $button-hover-translate;
   }
@@ -145,11 +145,11 @@ $color in $colors {
 
 // Default Button
 .btn-dark {
-  color: getColor("text") !important;
+  color: $text !important;
   background: #0000;
 
   &:hover {
-    background: getColor("background-dark") !important;
+    background: $background-dark !important;
     transition: $transition-button-1  !important;
     transform: $button-hover-translate;
   }

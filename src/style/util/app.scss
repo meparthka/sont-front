@@ -6,8 +6,8 @@
 }
 
 body{
-  background: getColor("background");
-  color: getColor("text");
+  background: $background;
+  color: $text;
 }
 
 .main-app {
@@ -16,7 +16,7 @@ body{
 }
 
 .link{
-  color: getColor("text");
+  color: $text;
   text-decoration: none;
   &:hover{
     color: $primary;

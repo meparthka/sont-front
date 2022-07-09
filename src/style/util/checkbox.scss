@@ -29,7 +29,7 @@
     left: 0;
     height: 18px;
     width: 18px;
-    background-color: getColor("alt-bg-alpha");
+    background-color: $alt-background-alpha;
     border-radius: $button-radius;
     border: 1px solid #0000;
     transition: $transition-button-1;

@@ -3,7 +3,7 @@
   top: 0;
   width: 4rem;
   height: 100vh;
-  background: getColor("background-3");
+  background: $background-3;
 
   .x-nav-logo {
     padding: 10px 5px;
@@ -24,7 +24,7 @@
 
       .x-n-link {
         padding: 6px 0;
-        color: getColor("icon-color");
+        color: $icon-color;
         display: block;
         text-align: center;
         font-size: 2.1rem;
@@ -36,12 +36,12 @@
         }
 
         &:hover {
-          color: getColor("icon-color-active");
+          color: $icon-color-active;
           transform: scale(1.09);
         }
 
         &.active {
-          color: getColor("icon-color-active");
+          color: $icon-color-active;
         }
 
       }
@@ -60,13 +60,9 @@
           padding-bottom: 6px;
         }
 
-        background: getColor("background");
+        background: $background;
       }
     }
   }
 
-}
-
-.x-con {
-  margin-left: 4rem;
 }

@@ -6,8 +6,8 @@
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-text);
+  background: rgb(26, 27, 30);
+  color: rgb(255, 255, 255);
 }
 
 .main-app {
@@ -16,7 +16,7 @@ body {
 }
 
 .link {
-  color: var(--color-text);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .link:hover {
@@ -33,44 +33,6 @@ body {
 
 .form > .btn {
   margin: 0;
-}
-
-.light-theme {
-  --color-text: rgb(26, 27, 30);
-  --color-background: rgb(255, 255, 255);
-  --color-alt-bg-alpha: rgba(26, 27, 30, 0.1);
-  --color-background-2: rgb(231, 231, 231);
-  --color-background-3: rgb(223, 223, 223);
-  --color-background-dark: rgb(196, 196, 196);
-  --color-icon-color: #000;
-  --color-icon-color-active: #000;
-  --color-alt-text: rgb(255, 255, 255);
-  --color-alt-background: rgb(26, 27, 30);
-  --color-alt-alt-bg-alpha: rgba(255, 255, 255, 0.075);
-  --color-alt-background-2: rgb(34, 34, 36);
-  --color-alt-background-3: rgb(43, 44, 48);
-  --color-alt-background-dark: rgb(22, 22, 22);
-  --color-alt-icon-color: rgba(255, 255, 255, 0.35);
-  --color-alt-icon-color-active: rgba(255, 255, 255, 0.9);
-}
-
-.dark-theme {
-  --color-text: rgb(255, 255, 255);
-  --color-background: rgb(26, 27, 30);
-  --color-alt-bg-alpha: rgba(255, 255, 255, 0.075);
-  --color-background-2: rgb(34, 34, 36);
-  --color-background-3: rgb(43, 44, 48);
-  --color-background-dark: rgb(22, 22, 22);
-  --color-icon-color: rgba(255, 255, 255, 0.35);
-  --color-icon-color-active: rgba(255, 255, 255, 0.9);
-  --color-alt-text: rgb(26, 27, 30);
-  --color-alt-background: rgb(255, 255, 255);
-  --color-alt-alt-bg-alpha: rgba(26, 27, 30, 0.1);
-  --color-alt-background-2: rgb(231, 231, 231);
-  --color-alt-background-3: rgb(223, 223, 223);
-  --color-alt-background-dark: rgb(196, 196, 196);
-  --color-alt-icon-color: #000;
-  --color-alt-icon-color-active: #000;
 }
 
 .container-xxl,
@@ -896,7 +858,7 @@ body {
   left: 0;
   height: 18px;
   width: 18px;
-  background-color: var(--color-alt-bg-alpha);
+  background-color: rgba(255, 255, 255, 0.075);
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0);
   transition: 0.4s;
@@ -1262,8 +1224,8 @@ body {
 
 .btn-alt {
   font-size: 16px;
-  color: var(--color-alt-text);
-  background: var(--color-alt-background);
+  color: #000;
+  background: rgb(255, 255, 255);
   padding: 8px 16px;
   margin: 0.25rem;
   display: inline-block;
@@ -1299,11 +1261,11 @@ body {
 }
 
 .btn-def {
-  color: var(--color-text) !important;
+  color: rgb(255, 255, 255) !important;
   background: rgba(0, 0, 0, 0);
 }
 .btn-def:hover {
-  background: var(--color-alt-bg-alpha) !important;
+  background: rgba(255, 255, 255, 0.075) !important;
   transition: 0.4s !important;
   transform: translateY(0px);
 }
@@ -1317,11 +1279,11 @@ body {
 }
 
 .btn-dark {
-  color: var(--color-text) !important;
+  color: rgb(255, 255, 255) !important;
   background: rgba(0, 0, 0, 0);
 }
 .btn-dark:hover {
-  background: var(--color-background-dark) !important;
+  background: rgb(22, 22, 22) !important;
   transition: 0.4s !important;
   transform: translateY(0px);
 }
@@ -1340,8 +1302,8 @@ body {
 .input-box input {
   width: 100%;
   font-size: 16px;
-  color: var(--color-text);
-  background: var(--color-alt-bg-alpha);
+  color: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.075);
   padding: 8px 16px;
   display: inline-block;
   text-decoration: none;
@@ -1391,8 +1353,8 @@ body {
 .input-box-alt input {
   width: 100%;
   font-size: 16px;
-  color: var(--color-text);
-  background: var(--color-alt-bg-alpha);
+  color: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.075);
   padding: 8px 16px;
   padding-left: 32px;
   display: inline-block;
@@ -1427,7 +1389,7 @@ body {
   justify-content: space-between;
 }
 .navbar .nav-logo {
-  color: var(--color-text-color);
+  color: rgb(255, 255, 255);
   font-size: 2.2rem;
   font-weight: 300;
 }
@@ -1465,7 +1427,7 @@ body {
   top: 50%;
   left: 50%;
   position: absolute;
-  background: var(--color-alt-bg-alpha);
+  background: rgba(255, 255, 255, 0.075);
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -1537,7 +1499,7 @@ body {
 .notify .notify-con {
   margin: 15px;
   padding: 5px 8px;
-  background-color: var(--color-background-2);
+  background-color: rgb(34, 34, 36);
   display: flex;
   border-radius: 4px;
   transition: 0.5s;
@@ -1670,12 +1632,18 @@ body {
     transform: translateX(100%);
   }
 }
+.x-con {
+  margin-left: 4rem;
+  background: rgba(49, 50, 54, 0.705);
+  height: 100vh;
+}
+
 .x-navbar {
   position: fixed;
   top: 0;
   width: 4rem;
   height: 100vh;
-  background: var(--color-background-3);
+  background: rgba(49, 50, 54, 0.705);
 }
 .x-navbar .x-nav-logo {
   padding: 10px 5px;
@@ -1693,7 +1661,7 @@ body {
 }
 .x-navbar .x-nav-links .x-n-links-group .x-n-link {
   padding: 6px 0;
-  color: var(--color-icon-color);
+  color: rgba(255, 255, 255, 0.35);
   display: block;
   text-align: center;
   font-size: 2.1rem;
@@ -1704,14 +1672,14 @@ body {
   margin: auto;
 }
 .x-navbar .x-nav-links .x-n-links-group .x-n-link:hover {
-  color: var(--color-icon-color-active);
+  color: rgba(255, 255, 255, 0.9);
   transform: scale(1.09);
 }
 .x-navbar .x-nav-links .x-n-links-group .x-n-link.active {
-  color: var(--color-icon-color-active);
+  color: rgba(255, 255, 255, 0.9);
 }
 .x-navbar .x-nav-links .x-n-links-group.active {
-  background: var(--color-background);
+  background: rgb(26, 27, 30);
 }
 .x-navbar .x-nav-links .x-n-links-group.active .x-n-link {
   padding: 9px 0;
@@ -1723,8 +1691,13 @@ body {
   padding-bottom: 6px;
 }
 
-.x-con {
-  margin-left: 4rem;
+.x-sidebar {
+  position: fixed;
+  left: 4rem;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background: rgb(57, 58, 61);
 }
 
 /*# sourceMappingURL=main.css.map */
