@@ -2,9 +2,10 @@ import React, { useState } from "react"
 import Navbar from "../components/navbar"
 import InputBox from "../components/inputbox"
 import CheckBox from "../components/checkbox"
-import { BiUser, BiLockAlt } from "react-icons/bi";
 import { useDispatch } from "react-redux";
 import { addNotify, removeAllNotify } from "../data/notify"
+import { ImUser } from "react-icons/im";
+import { HiLockClosed } from "react-icons/hi"
 
 const Login = () => {
 
@@ -107,8 +108,8 @@ const Login = () => {
               </div>
             </div>
             <div className="inputs">
-              <InputBox icon={<BiUser />} name="username" value={loginValue.username} onChange={setLoginFormValue} error={loginError.username} place="Username" />
-              <InputBox icon={<BiLockAlt />} name="password" value={loginValue.password} onChange={setLoginFormValue} error={loginError.password} place="Password" type="password" />
+              <InputBox icon={<ImUser />} name="username" value={loginValue.username} onChange={setLoginFormValue} error={loginError.username} place="Username" />
+              <InputBox icon={<HiLockClosed />} name="password" value={loginValue.password} onChange={setLoginFormValue} error={loginError.password} place="Password" type="password" />
               <CheckBox lable="Remember Me." name="remember" value={loginValue.remember} onChange={setLoginFormValue} />
             </div>
             <button id="login_button" className="btn btn-primary a-right">Login</button>
