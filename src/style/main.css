@@ -1748,5 +1748,8 @@ body {
   color: #fff;
   background: rgb(34, 34, 36);
 }
+.x-sidebar .x-link-group > .x-sb-link.active .icon {
+  color: #9ceafa;
+}
 
 /*# sourceMappingURL=main.css.map */

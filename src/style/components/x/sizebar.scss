@@ -37,11 +37,11 @@
     border-radius: $button-radius;
     display: flex;
 
-    &>*{
+    &>* {
       margin: auto 0;
     }
 
-    .icon{
+    .icon {
       font-size: 1rem;
       margin-right: 10px;
     }
@@ -53,6 +53,10 @@
     &.active {
       color: #fff;
       background: $background-2;
+
+      .icon {
+        color: lighten($cyan, 30%);
+      }
     }
   }
 
