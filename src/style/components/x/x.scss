@@ -3,3 +3,15 @@
   background: $background-3;
   height: 100vh;
 }
+
+.x-head-box{
+  font-size: 1.4rem;
+  padding: 15px 0;
+  height: 34px;
+  box-sizing: unset;
+  display: flex;
+
+  &>*{
+    margin: auto;
+  }
+}

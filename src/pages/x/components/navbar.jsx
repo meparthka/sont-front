@@ -7,8 +7,10 @@ const XNavbar = () => {
   return (
     <div>
       <div className="x-navbar">
-        <div className="x-nav-logo">
-          <img src={XLogo} alt="" srcset="" />
+        <div className="x-head-box">
+          <div className="x-nav-logo">
+            <img src={XLogo} alt="" srcset="" />
+          </div>
         </div>
         <div className="x-nav-links">
           {/* <BiFolder /> */}
