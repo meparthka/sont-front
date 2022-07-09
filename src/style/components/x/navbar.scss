@@ -37,6 +37,7 @@
 
         &:hover {
           color: getColor("icon-color-active");
+          transform: scale(1.09);
         }
 
         &.active {

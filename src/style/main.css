@@ -1705,6 +1705,7 @@ body {
 }
 .x-navbar .x-nav-links .x-n-links-group .x-n-link:hover {
   color: var(--color-icon-color-active);
+  transform: scale(1.09);
 }
 .x-navbar .x-nav-links .x-n-links-group .x-n-link.active {
   color: var(--color-icon-color-active);
