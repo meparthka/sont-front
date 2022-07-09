@@ -2,13 +2,58 @@
   position: fixed;
   left: 4rem;
   top: 0;
-  width: 220px;
+  width: 14rem;
   height: 100vh;
   background: $background-4;
   padding: 0 10px;
 
-  .x-head-box *{
+  .x-head-box {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .x-head-box * {
     margin: auto 0;
+  }
+
+  .x-sb-sub-title {
+    margin: 9px 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: rgba(#fff, .8);
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 300;
+  }
+
+  .x-link-group>.x-sb-link {
+    text-decoration: none;
+    color: rgba(#fff, .8);
+    display: block;
+    margin: 6px 0;
+    padding: 8px 12px;
+    font-size: .9rem;
+    transition: $transition-2;
+    border-radius: $button-radius;
+    display: flex;
+
+    &>*{
+      margin: auto 0;
+    }
+
+    .icon{
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background: rgba($background, .3);
+    }
+
+    &.active {
+      color: #fff;
+      background: $background-2;
+    }
   }
 
 }

@@ -9,7 +9,7 @@ $background-dark: rgb(22, 22, 22);
 $alt-background-alpha: rgba(255, 255, 255, 0.075);
 $text: rgb(255, 255, 255);
 $background-2: rgb(34, 34, 36);
-$background-3: rgba(49, 50, 54, 0.705);
+$background-3: rgb(43,43,47);
 $background-4: rgba(57, 58, 61);
 $icon-color: rgba(255, 255, 255, 0.35);
 $icon-color-active: rgba(255, 255, 255, 0.9);
@@ -74,6 +74,7 @@ $spacers: (
 );
 
 $transition-1: .3s;
+$transition-2: .15s;
 
 $transition-button-1: .4s;
 $transition-button-2: .1s;

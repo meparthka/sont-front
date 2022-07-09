@@ -1,7 +1,8 @@
 import React from 'react';
 import XLogo from '../../../assets/logo.svg'
-import { BsFillFolderFill, BsImages, BsChatFill } from "react-icons/bs"
 import { Link } from 'react-router-dom';
+import { IoIosFolder } from 'react-icons/io'
+import { ImUsers, ImBubbles2, ImImages } from 'react-icons/im'
 
 const XNavbar = () => {
   return (
@@ -16,15 +17,20 @@ const XNavbar = () => {
           {/* <BiFolder /> */}
           <div className="x-n-links-group active">
             <Link to="/x" className="x-n-link active">
-              <BsFillFolderFill />
+              <IoIosFolder />
             </Link>
             <Link to="/x" className="x-n-link">
-              <BsImages />
+              <ImImages />
             </Link>
           </div>
           <div className="x-n-links-group">
             <Link to="/x" className="x-n-link">
-              <BsChatFill />
+              <ImBubbles2 />
+            </Link>
+          </div>
+          <div className="x-n-links-group">
+            <Link to="/x" className="x-n-link">
+              <ImUsers className='' />
             </Link>
           </div>
         </div>
