@@ -1,12 +1,16 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './Home';
+import XNavbar from './components/navbar';
+import Drive from './Drive';
+import Media from './Media';
 
 const AppX = () => {
   return (
     <div>
+      <XNavbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Drive />} />
+        <Route path="/media" element={<Media />} />
       </Routes>
     </div>
   );

@@ -16,7 +16,7 @@ const adminApp = () => {
           <Routes>
             <Route path="*" element={<NotFound />} />
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/x" element={<AppX />} />
+            <Route exact path="/x/*" element={<AppX />} />
             <Route exact path="/login" element={<Login />} />
           </Routes>
         </div>
