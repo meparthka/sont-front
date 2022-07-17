@@ -1752,4 +1752,15 @@ body {
   color: #9ceafa;
 }
 
+.header {
+  border-bottom: 1px solid rgb(57, 58, 61);
+}
+.header .search-box {
+  display: flex;
+  justify-content: space-between;
+}
+.header .search-box * {
+  margin: 0;
+}
+
 /*# sourceMappingURL=main.css.map */

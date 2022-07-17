@@ -1,4 +1,5 @@
 import React from 'react';
+import DriveHeader from './components/header';
 import XSidebarDrive from './components/sidebar_drive';
 
 const XDrive = () => {
@@ -6,7 +7,7 @@ const XDrive = () => {
     <div>
       <XSidebarDrive />
       <div className="x-con">
-        <h1>Hello, World!</h1>
+        <DriveHeader />
       </div>
     </div>
   );

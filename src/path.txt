@@ -1,0 +1,17 @@
+/
+/login
+/x
+/x/recents
+/x/trash
+/x/shared
+/x/link
+/x/media
+/x/media/video
+/x/media/docs
+/x/media/fav
+/x/message
+/x/user
+/x/user/show/*
+/x/user/delete/*
+/x/user/edit/*
+/x/user/add
