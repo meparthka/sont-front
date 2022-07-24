@@ -9,8 +9,8 @@ const AppX = () => {
     <div>
       <XNavbar />
       <Routes>
-        <Route path="/" element={<Drive />} />
-        <Route path="/media" element={<Media />} />
+        <Route path="/drive/*" element={<Drive />} />
+        <Route path="/media/*" element={<Media />} />
       </Routes>
     </div>
   );

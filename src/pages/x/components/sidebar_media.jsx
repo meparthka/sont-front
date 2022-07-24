@@ -1,8 +1,12 @@
 import React from 'react';
-import { IoMdVideocam, IoIosVideocam, IoMdImage } from 'react-icons/io'
 import { BsCamera, BsCamera2, BsCameraVideo, BsCameraVideoFill, BsFileEarmarkPdfFill, BsFilePdf, BsFilePdfFill, BsHeart, BsHeartFill, BsImage, BsImageFill } from 'react-icons/bs'
+import { Link, useParams } from 'react-router-dom';
 
 const XSidebar = () => {
+
+  let p = useParams()["*"]
+  p = p.split("/")
+
   return (
     <div className='x-sidebar'>
       <div className="x-head-box">
@@ -15,22 +19,22 @@ const XSidebar = () => {
         Liberary
       </div>
       <div className="x-link-group">
-        <a href="#" className="x-sb-link">
+        <Link to="/x/media" className={"x-sb-link " + (p[0] === "" ? "active " : " ")}>
           <BsImageFill className="icon" />
           Images
-        </a>
-        <a href="#" className="x-sb-link">
+        </Link>
+        <Link to="/x/media/videos" className={"x-sb-link " + (p[0] === "videos" ? "active " : " ")}>
           <BsCameraVideoFill className="icon" />
           Videos
-        </a>
-        <a href="#" className="x-sb-link">
+        </Link>
+        <Link to="/x/media/docs" className={"x-sb-link " + (p[0] === "docs" ? "active " : " ")}>
           <BsFileEarmarkPdfFill className="icon" />
           Documents
-        </a>
-        <a href="#" className="x-sb-link">
+        </Link>
+        <Link to="/x/media/fav" className={"x-sb-link " + (p[0] === "fav" ? "active " : " ")}>
           <BsHeartFill className="icon" />
           Favrites
-        </a>
+        </Link>
       </div>
     </div>
   );

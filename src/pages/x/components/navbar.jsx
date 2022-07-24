@@ -3,8 +3,13 @@ import XLogo from '../../../assets/logo.svg'
 import { Link } from 'react-router-dom';
 import { IoIosFolder } from 'react-icons/io'
 import { ImUsers, ImBubbles2, ImImages } from 'react-icons/im'
+import { useParams } from "react-router-dom"
 
 const XNavbar = () => {
+
+  let p = useParams()["*"];
+  p = p.split("/");
+
   return (
     <div>
       <div className="x-navbar">
@@ -15,21 +20,21 @@ const XNavbar = () => {
         </div>
         <div className="x-nav-links">
           {/* <BiFolder /> */}
-          <div className="x-n-links-group active">
-            <Link to="/x" className="x-n-link active">
+          <div className={"x-n-links-group " + ((p[0] === "drive" || p[0] === "media") ? "active " : " ")}>
+            <Link to="/x/drive" className={"x-n-link " + (p[0] === "drive"? "active" : "")}>
               <IoIosFolder />
             </Link>
-            <Link to="/x" className="x-n-link">
+            <Link to="/x/media" className={"x-n-link " + (p[0] === "media"? "active " : " ") + ((p[0] !== "drive" && p[0] !== "media") ? "d-none " : " ")}>
               <ImImages />
             </Link>
           </div>
-          <div className="x-n-links-group">
-            <Link to="/x" className="x-n-link">
+          <div className={"x-n-links-group " + (p[0] === "message" ? "active " : " ")}>
+            <Link to="/x/message" className={"x-n-link " + (p[0] === "message" ? "active " : " ")}>
               <ImBubbles2 />
             </Link>
           </div>
-          <div className="x-n-links-group">
-            <Link to="/x" className="x-n-link">
+          <div className={"x-n-links-group " + (p[0] === "users" ? "active " : " ")}>
+            <Link to="/x/users" className={"x-n-link " + (p[0] === "users" ? "active " : " ")}>
               <ImUsers className='' />
             </Link>
           </div>
