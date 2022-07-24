@@ -1,13 +1,16 @@
 import React from "react";
+import { MdSearch } from "react-icons/md"
+import InputBox from "../../../components/inputbox"
 
 const DriveHeader = () => {
   return (
     <div className="header">
-      <div className="x-head-box search-box">
-        <div></div>
-        <div>
-          Hello, World!
+      <div className="x-head-box x-header">
+        
+        <div className="x-header-search">
+          <InputBox icon={<MdSearch />} name="username"  place="Username" />
         </div>
+
         <div>
           Hello, World!
         </div>
