@@ -1,7 +1,7 @@
 import React from 'react';
-import DriveHeader from './components/header';
 import XSidebarDrive from './components/sidebar_drive';
 import { Route, Routes } from 'react-router-dom';
+import DriveHome from './DriveHome';
 
 const XDrive = () => {
   return (
@@ -9,11 +9,11 @@ const XDrive = () => {
       <XSidebarDrive />
       <div className="x-con">
         <Routes>
-          <Route path="/" element={<DriveHeader />} />
-          <Route path="/recent" element={<DriveHeader />} />
-          <Route path="/trash" element={<DriveHeader />} />
-          <Route path="/shared" element={<DriveHeader />} />
-          <Route path="/link" element={<DriveHeader />} />
+          <Route path="/" element={<DriveHome />} />
+          <Route path="/recent" element={<DriveHome />} />
+          <Route path="/trash" element={<DriveHome />} />
+          <Route path="/shared" element={<DriveHome />} />
+          <Route path="/link" element={<DriveHome />} />
         </Routes>
       </div>
     </div>
