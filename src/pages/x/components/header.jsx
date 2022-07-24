@@ -8,7 +8,7 @@ const DriveHeader = () => {
       <div className="x-head-box x-header">
         
         <div className="x-header-search">
-          <InputBox icon={<MdSearch />} name="username"  place="Username" />
+          <InputBox icon={<MdSearch />} name="query"  place="Search" />
         </div>
 
         <div>
